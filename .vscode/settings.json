@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"out": false
+	},
+	"search.exclude": {
+		"out": true
+	},
+	// js-debug's Network.enable crashes the debugged extension host (node inspector assert, SIGABRT)
+	"debug.javascript.enableNetworkView": false
+}

@@ -1,0 +1,4 @@
+out
+node_modules
+.vscode/search-filters.code-workspace
+*.vsix

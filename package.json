@@ -1,0 +1,116 @@
+{
+  "name": "search-filters",
+  "displayName": "Search Filters",
+  "description": "Toggle frequently used include/exclude patterns for Search right from the Search panel",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.144.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "search-filters.addPattern",
+        "title": "Add Pattern",
+        "icon": "$(add)",
+        "category": "Search Filters"
+      },
+      {
+        "command": "search-filters.editPattern",
+        "title": "Edit Pattern",
+        "icon": "$(edit)",
+        "category": "Search Filters"
+      },
+      {
+        "command": "search-filters.removePattern",
+        "title": "Remove Pattern",
+        "icon": "$(trash)",
+        "category": "Search Filters"
+      }
+    ],
+    "configuration": {
+      "title": "Search Filters",
+      "properties": {
+        "searchFilters.include": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "default": {},
+          "scope": "window",
+          "markdownDescription": "Glob patterns for **files to include** (`pattern: enabled`). Managed from the Filters view in the Search panel."
+        },
+        "searchFilters.exclude": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          },
+          "default": {},
+          "scope": "window",
+          "markdownDescription": "Glob patterns for **files to exclude** (`pattern: enabled`). Managed from the Filters view in the Search panel."
+        }
+      }
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "search-filters.filters",
+          "name": "Filters",
+          "contextualTitle": "Filters"
+        }
+      ]
+    },
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "search-filters.addPattern",
+          "when": "view == search-filters.filters && viewItem == group",
+          "group": "inline"
+        },
+        {
+          "command": "search-filters.editPattern",
+          "when": "view == search-filters.filters && viewItem == pattern",
+          "group": "inline@1"
+        },
+        {
+          "command": "search-filters.removePattern",
+          "when": "view == search-filters.filters && viewItem == pattern",
+          "group": "inline@2"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "search-filters.addPattern",
+          "when": "false"
+        },
+        {
+          "command": "search-filters.editPattern",
+          "when": "false"
+        },
+        {
+          "command": "search-filters.removePattern",
+          "when": "false"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "@types/vscode": "1.144.0",
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
+  }
+}
