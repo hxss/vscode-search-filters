@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.5039062"
+     inkscape:cx="128"
+     inkscape:cy="128"
+     inkscape:window-width="1440"
+     inkscape:window-height="891"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     width="256"
+     height="256"
+     rx="48"
+     fill="#007ACC"
+     id="rect1"
+     style="fill:#000000" />
+  <!-- codicon "filter" (@vscode/codicons 0.0.36), 16x16 scaled x10 and centered -->
+  <path
+     d="M 142.99995,192.99998 H 112.9999 c -2.7599,0 -4.99988,-2.24 -4.99988,-5 v -41.70999 c 0,-4.01006 -1.56005,-7.77 -4.39003,-10.61 l -40.0001,-40 C 60.04989,92.11001 58,87.179997 58,82.13999 58,71.580005 66.58003,63 77.14002,63 H 178.85998 C 189.41997,63 198,71.580005 198,82.13999 c 0,5.029961 -2.04011,9.97 -5.61003,13.53 l -39.99996,40 c -2.82998,2.84 -4.39003,6.6 -4.39003,10.60999 v 41.71 c 0,2.75999 -2.23998,4.99998 -5.00003,4.99998 z m -25.00001,-10 h 19.99998 v -36.70999 c 0,-6.68001 2.60002,-12.96001 7.32002,-17.68 L 185.3199,88.609998 c 1.70006,-1.699975 2.68004,-4.060033 2.68004,-6.460007 0,-5.039992 -4.09992,-9.14 -9.13996,-9.14 H 77.14002 c -5.04004,0 -9.1401,4.099978 -9.1401,9.14 0,2.399944 0.97938,4.760002 2.68003,6.469993 l 39.99996,40.000006 c 4.73007,4.71999 7.32003,10.99999 7.32003,17.68 v 36.70999 z"
+     id="path1-6"
+     style="stroke-width:10;fill:#ffffff" />
+</svg>

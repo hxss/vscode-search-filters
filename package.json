@@ -2,7 +2,9 @@
   "name": "search-filters",
   "displayName": "Search Filters",
   "description": "Toggle frequently used include/exclude patterns for Search right from the Search panel",
+  "license": "MIT",
   "version": "0.0.1",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.144.0"
   },
@@ -62,7 +64,8 @@
         {
           "id": "search-filters.filters",
           "name": "Filters",
-          "contextualTitle": "Filters"
+          "contextualTitle": "Filters",
+          "icon": "$(filter)"
         }
       ]
     },

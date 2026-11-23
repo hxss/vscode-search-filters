@@ -8,14 +8,17 @@ Typing the same globs into the Search panel's **files to include** and **files t
 
 The extension adds a **Filters** view to the Search panel with two lists:
 
+
+![ScreenShot](/media/screenshot.png)
+
 ```
 FILTERS
-├─ Files to include                 (+)
-│   ├─ ☑ src/**                 (✎) (🗑)
+├─ Files to include                    (+)
+│   ├─ ☑ src/**                (✎) (🗑)
 │   └─ ☐ **/*.test.ts           (✎) (🗑)
-└─ Files to exclude                 (+)
-    ├─ ☑ **/vendor/**           (✎) (🗑)
-    └─ ☑ **/cache/**            (✎) (🗑)
+└─ Files to exclude                    (+)
+    ├─ ☑ **/vendor/**          (✎) (🗑)
+    └─ ☑ **/cache/**           (✎) (🗑)
 ```
 
 - **Add** a pattern with the `+` button on a list header.
@@ -55,3 +58,7 @@ The format is the same as the built-in `files.exclude`, and you can edit it by h
 
 - Extensions can't read what is typed in the Search box. When the filters are applied, VS Code may replace the search text with the current editor selection, depending on `editor.find.seedSearchStringFromSelection`.
 - Extensions can't put a view straight into the Search panel. Filters is declared in the Explorer and moved with the internal `vscode.moveViews` command. If a future VS Code release changes that command, drag the view to the Search panel by hand.
+
+## License
+
+[MIT](LICENSE)
