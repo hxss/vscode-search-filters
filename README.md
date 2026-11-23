@@ -9,7 +9,7 @@ Typing the same globs into the Search panel's **files to include** and **files t
 The extension adds a **Filters** view to the Search panel with two lists:
 
 
-![ScreenShot](/media/screenshot.png)
+![ScreenShot](https://raw.githubusercontent.com/hxss/vscode-search-filters/refs/heads/main/media/screenshot.png)
 
 ```
 FILTERS
